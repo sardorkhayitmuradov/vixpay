@@ -1,6 +1,6 @@
 const Qa = () => {
     return (
-      <div>Qa</div>
+      <main>Qa</main>
     )
   }
   

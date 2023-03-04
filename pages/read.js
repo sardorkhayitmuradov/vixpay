@@ -1,6 +1,6 @@
 const Read = () => {
     return (
-      <div>Read</div>
+      <main>Read</main>
     )
   }
   

@@ -1,6 +1,6 @@
 const Password = () => {
     return (
-      <div>Password</div>
+      <main>Password</main>
     )
   }
   

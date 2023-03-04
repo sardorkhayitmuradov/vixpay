@@ -1,15 +1,9 @@
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 import Layout from '@/components/layout';
-import '@/styles/globals.css';
 import { NextIntlProvider } from 'next-intl';
-// import { appWithTranslation } from 'next-i18next';
-// import ModalProvider from "../context/modal";
-// import { Provider } from 'react-redux';
-// import { store } from '../redux/store';
-// import '../styles/globals.css'
-// import '../components/Checkbox/check.css'
-// import '../components/SaveCheckbox/SaveCheckbox.css'
+import '../styles/globals.css';
+
 
 function App({ Component, pageProps }) {
   const router = useRouter();

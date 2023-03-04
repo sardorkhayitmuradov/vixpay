@@ -1,6 +1,6 @@
 const Write = () => {
     return (
-      <div>Write</div>
+      <main>Write</main>
     )
   }
   
