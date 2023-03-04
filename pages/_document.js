@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className="bg-[url('../public/assets/images/dots.png')] bg-no-repeat bg-right-top">
         <Main />
         <NextScript />
       </body>

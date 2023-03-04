@@ -11,6 +11,11 @@ module.exports = {
       PoppinsMedium: ["PoppinsMedium"],
       PoppinsSemibold: ["PoppinsSemibold"],
       PoppinsBold: ["PoppinsBold"],
+
+      PromptRegular: ["PromptRegular"],
+      PromptMedium: ["PromptMedium"],
+      PromptSemibold: ["PromptSemibold"],
+      PromptBold: ["PromptBold"],
       
       NanumGothicRegular: ["NanumGothicRegular"],
       NanumGothicBold: ["NanumGothicBold"],
