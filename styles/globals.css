@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+      font-family: 'NanumGothicRegular';
+      src: url('../public/fonts/Nanum Gothic/NanumGothic-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'NanumGothicBold';
+      src: url('../public/fonts/Nanum Gothic/NanumGothic-Bold.ttf')
+        format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'NanumGothicExtraBold';
+      src: url('../public/fonts/Nanum Gothic/NanumGothic-ExtraBold.ttf')
+        format('truetype');
+      font-weight: 800;
+      font-style: normal;
+    }
+
+  @font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../public/fonts/Poppins/Poppins-Regular.ttf')
+      format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../public/fonts/Poppins/Poppins-Medium.ttf')
+      format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'PoppinsSemibold';
+    src: url('../public/fonts/Poppins/Poppins-SemiBold.ttf')
+      format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'PoppinsBold';
+    src: url('../public/fonts/Poppins/Poppins-Bold.ttf')
+      format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'RubikRegular';
+    src: url('../public/fonts/Rubik/Rubik-Regular.ttf')
+      format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'RubikMedium';
+    src: url('../public/fonts/Rubik/Rubik-Medium.ttf')
+      format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'RubikSemibold';
+    src: url('../public/fonts/Rubik/Rubik-SemiBold.ttf')
+      format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'RubikBold';
+    src: url('../public/fonts/Rubik/Rubik-Bold.ttf')
+      format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NotoSansKoreanRegular';
+    src: url('../public/fonts/Noto Sans Korean/NotoSansKR-Regular.otf')
+      format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NotoSansKoreanMedium';
+    src: url('../public/fonts/Noto Sans Korean/NotoSansKR-Medium.otf')
+      format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NotoSansKoreanBold';
+    src: url('../public/fonts/Noto Sans Korean/NotoSansKR-Bold.otf')
+      format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body , footer {
+    max-width: 100vw;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
