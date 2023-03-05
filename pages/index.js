@@ -11,8 +11,9 @@ import FoodService from '../public/assets/images/foodservice-logo.png';
 import Roun from '../public/assets/images/roun-logo.png';
 import Hawtai from '../public/assets/images/hawtai-motor-logo.png';
 import ArdenHill from '../public/assets/images/ardenhill-logo.png';
-
-
+import YoshoPos from '../public/assets/images/yoshopPos.png';
+import VixpayNetwork from '../public/assets/images/vixpay-network.png';
+import VixpayPay from '../public/assets/images/vixpay-payment.png';
 
 export default function Home() {
   const t = useTranslations('Index');
@@ -30,7 +31,7 @@ export default function Home() {
           <div className='flex items-center'>
             <Button
               className={
-                'mr-[18px] flex items-center rounded-2xl border-[3px] border-solid border-[#67E8F9] py-[15px] px-[60px]'
+                'mr-[18px] flex items-center rounded-2xl border-[3px] border-solid border-[#67E8F9] app py-[15px] px-[60px]'
               }
             >
               <Image
@@ -46,7 +47,7 @@ export default function Home() {
             </Button>
             <Button
               className={
-                'flex items-center rounded-2xl border-[3px] border-solid border-[#67E8F9] py-[15px] px-[60px]'
+                'flex items-center rounded-2xl border-[3px] border-solid app border-[#67E8F9] app py-[15px] px-[60px]'
               }
             >
               <Image
@@ -107,6 +108,9 @@ export default function Home() {
                   API, 블록스캔 기능을 이용해 자유롭게 다양한 생태계를 구성할 수
                   있습니다.
                 </p>
+                <Button className={'border border-solid border-[#22C9EE] app rounded-[6px] py-[16px] px-[24px] shadow-[0px_1px_1px_1px_rgba(0,0,0,0.07)]'}>
+                  <p className="text-[19px] leading-[20px] font-RubikSemibold tracking-[-0.3px] text-[#4B5563]">Learn more</p>
+                </Button>
               </div>
             </li>
             <li className='py-[104px] flex items-center justify-between flex-row-reverse'>
@@ -137,6 +141,9 @@ export default function Home() {
                   AMEX, UNION Pay Brand 인증, PCI PTS 4.X 인증 등 글로벌 최고의
                   보안 수준을 제공합니다.
                 </p>
+                <Button className={'border border-solid border-[#22C9EE] app rounded-[6px] py-[16px] px-[24px] shadow-[0px_1px_1px_1px_rgba(0,0,0,0.07)]'}>
+                  <p className="text-[19px] leading-[20px] font-RubikSemibold tracking-[-0.3px] text-[#4B5563]">Learn more</p>
+                </Button>
               </div>
             </li>
           </ul>
@@ -234,8 +241,58 @@ export default function Home() {
         </ul>
         </div>
       </section>
-      <section>
-        
+      <section className="pt-[112px] pb-[149px]">
+          <div className="max-w-xl mx-auto">
+            <div className='text-center mb-20'>
+              <p className='font-PoppinsMedium mb-1 text-[18px] leading-[135%] text-[#6B7280] tracking-[-0.26px]'>
+              Service
+              </p>
+              <h2 className='font-PoppinsBold mb-5 text-[36px] leading-[110%] text-[#1F2937] tracking-[-0.79px]'>
+              VIXPAY Solutions
+              </h2>
+              <p className='font-NotoSansKoreanRegular text-[18px] leading-[150%] text-[#4B5563] tracking-[-0.26px] max-w-[824px] w-full mx-auto'>
+              VIXPAY 솔루션을 이용해 사업자, 상점, 소비자를 통합하는 서비스를 제공할 수 있습니다. VIXPAY 솔루션은 온라인과 오프라인을 통합하고 다양한 사용자를 연결하는 독창적인 비즈니스 아이디어를 실현할 수 있도록 제공합니다.
+              </p>
+            </div>
+            <ul className="flex items-center justify-between flex-wrap max-w-[800px] w-full mx-auto gap-y-20">
+              <li className="flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300">
+                <p className="text-[24px] leading-[150%] font-PoppinsMedium text-[#06B6D4] mb-6">Yoshop POS</p>
+                <Image src={YoshoPos}
+                width={326}
+                height={200}
+                className='serviceImage mb-6'
+                alt='service' />
+                <p className="text-[15px] leading-[24px] text-[#1F2937] font-NanumGothicBold">매장에서 사용 가능한 스마트 POS 시스템</p>
+              </li>
+              <li className="flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300">
+                <p className="text-[24px] leading-[150%] font-PoppinsMedium text-[#06B6D4] mb-6">Yoshop POS</p>
+                <Image src={YoshoPos}
+                width={326}
+                height={200}
+                className='serviceImage mb-6'
+                alt='service' />
+                <p className="text-[15px] leading-[24px] text-[#1F2937] font-NanumGothicBold">매장에서 사용 가능한 스마트 POS 시스템</p>
+              </li>
+              <li className="flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300">
+                <p className="text-[24px] leading-[150%] font-PoppinsMedium text-[#06B6D4] mb-6">VIXPAY Payment</p>
+                <Image src={VixpayPay}
+                width={326}
+                height={200}
+                className='serviceImage mb-6'
+                alt='service' />
+                <p className="text-[15px] leading-[24px] text-[#1F2937] font-NanumGothicBold">신용카드, 현금, 쿠폰, 암호화폐 등모 든 결제수단을 지원할 수 있는 PG 서비스</p>
+              </li>
+              <li className="flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300">
+                <p className="text-[24px] leading-[150%] font-PoppinsMedium text-[#06B6D4] mb-6">VIXPAY Network</p>
+                <Image src={VixpayNetwork}
+                width={326}
+                height={200}
+                className='serviceImage mb-6'
+                alt='service' />
+                <p className="text-[15px] leading-[24px] text-[#1F2937] font-NanumGothicBold">하이퍼레져 기반의 암호화폐 Eco system</p>
+              </li>
+            </ul>
+          </div>
       </section>
     </main>
   );
