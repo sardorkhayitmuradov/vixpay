@@ -557,8 +557,8 @@ export default function Home() {
             <Textarea
               id={'contact-textarea'}
               title={'문의내용'}
-              row={10}
-              cols={40}
+              row={5}
+              cols={400}
               value={inquiry}
               onGetValue={(value) => setInquiry(value)}
               className={
