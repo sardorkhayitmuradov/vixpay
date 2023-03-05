@@ -19,19 +19,18 @@ import VixpayPay from '../public/assets/images/vixpay-payment.png';
 import tabs from '../constants/tabs';
 import TabNavItem from '@/components/Tabs/TabNavItem/TabNavItem';
 import TabAccordion from '@/components/Tabs/TabAccordion/TabAccordion';
-import Location from '../public/assets/icons/location.svg'
-import Tel from '../public/assets/icons/tel.svg'
+import Location from '../public/assets/icons/location.svg';
+import Tel from '../public/assets/icons/tel.svg';
 import Textarea from '@/components/Textarea/Textarea';
-import Download from '../public/assets/icons/download.svg'
+import Download from '../public/assets/icons/download.svg';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(1);
   const [filteredTab, setFilteredTab] = useState(tabs.at(0).questions);
   const [page, setPage] = useState(1);
-  const [email,setEmail] = useState('');
-  const [name,setName] = useState('');
-  const [inquiry,setInquiry] = useState('');
-
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [inquiry, setInquiry] = useState('');
 
   const itemsPerPage = 5;
   const totalPages = Math.ceil(filteredTab.length / itemsPerPage);
@@ -477,7 +476,7 @@ export default function Home() {
       </section>
       <section className='py-[166px] bg-[#EEF8FF]'>
         <div className='max-w-xl mx-auto flex items-end justify-between'>
-          <div className="max-w-[630px] w-full">
+          <div className='max-w-[630px] w-full'>
             <p className='text-[18px] leading-[135%] tracking-[-0.26px] text-[#71717A] font-PoppinsMedium mb-3'>
               Contact Us
             </p>
@@ -490,49 +489,125 @@ export default function Home() {
               풍요로운 오늘이 될 수있도록 문제를 찾아 해결합니다
             </p>
 
-            <div className="max-w-[504px] w-full bg-[#0E7490] contact-wrapper rounded-xl p-6 border border-solid border-white opacity-70 mb-5">
-              <div className="flex items-center mb-[18px]">
-                <Image src={Location} width={24} height={24} alt="location" className="mr-3" />
-                <p className="text-[18px] leading-[135%] tracking-[-0.26px] text-[#fff] font-PoppinsMedium">Location</p>
+            <div className='max-w-[504px] w-full bg-[#0E7490] contact-wrapper rounded-xl p-6 border border-solid border-white opacity-70 mb-5'>
+              <div className='flex items-center mb-[18px]'>
+                <Image
+                  src={Location}
+                  width={24}
+                  height={24}
+                  alt='location'
+                  className='mr-3'
+                />
+                <p className='text-[18px] leading-[135%] tracking-[-0.26px] text-[#fff] font-PoppinsMedium'>
+                  Location
+                </p>
               </div>
-                <p className="text-[15px] leading-[135%] tracking-[-0.18px] text-[#fff] font-PoppinsMedium">서울특별시 금천구 가산디지털2로 53, 1901~1902호(가산동,한라시그마밸리)(주)나우앤페이</p>
+              <p className='text-[15px] leading-[135%] tracking-[-0.18px] text-[#fff] font-PoppinsMedium'>
+                서울특별시 금천구 가산디지털2로 53,
+                1901~1902호(가산동,한라시그마밸리)(주)나우앤페이
+              </p>
             </div>
-            <div className="max-w-[504px] w-full bg-[#0E7490] contact-wrapper rounded-xl p-6 border border-solid border-white opacity-70">
-              <div className="flex items-center mb-[18px]">
-                <Image src={Tel} width={24} height={24} alt="tel" className="mr-3" />
-                <p className="text-[18px] leading-[135%] tracking-[-0.26px] text-[#fff] font-PoppinsMedium">Tel</p>
+            <div className='max-w-[504px] w-full bg-[#0E7490] contact-wrapper rounded-xl p-6 border border-solid border-white opacity-70'>
+              <div className='flex items-center mb-[18px]'>
+                <Image
+                  src={Tel}
+                  width={24}
+                  height={24}
+                  alt='tel'
+                  className='mr-3'
+                />
+                <p className='text-[18px] leading-[135%] tracking-[-0.26px] text-[#fff] font-PoppinsMedium'>
+                  Tel
+                </p>
               </div>
-                <p className="text-[15px] leading-[135%] tracking-[-0.18px] text-[#fff] font-PoppinsMedium">(+82) 02 3285 0555</p>
+              <p className='text-[15px] leading-[135%] tracking-[-0.18px] text-[#fff] font-PoppinsMedium'>
+                (+82) 02 3285 0555
+              </p>
             </div>
           </div>
-          <div className="max-w-[511px] w-full bg-[#FFFFFF] rounded-[20px] inputCard py-12 px-[55px]">
-          <Input id={'email'} title={'이메일'} className={"text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicRegular p-[10px]"} type={'email'} value={email} onGetValue={(value) => setEmail(value)} wrapperClassName={"flex flex-col mb-4"} labelClassName={"text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicBold mb-1"} />
-          <Input id={'email'} title={'이름'} className={"text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicRegular p-[10px]"} type={'email'} value={name} onGetValue={(value) => setName(value)} wrapperClassName={"flex flex-col mb-4"} labelClassName={"text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicBold mb-1"} />
-          <Textarea id={'contact-textarea'} title={'문의내용'} row={10} cols={40} value={inquiry} onGetValue={(value) => setInquiry(value)}  className={'text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicRegular p-[10px]'} labelClassName={'text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicRegular mb-1'} wrapperClassName={"flex flex-col"} />
+          <div className='max-w-[511px] w-full bg-[#FFFFFF] rounded-[20px] inputCard py-12 px-[55px]'>
+            <Input
+              id={'email'}
+              title={'이메일'}
+              className={
+                'text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicRegular p-[10px]'
+              }
+              type={'email'}
+              value={email}
+              onGetValue={(value) => setEmail(value)}
+              wrapperClassName={'flex flex-col mb-4'}
+              labelClassName={
+                'text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicBold mb-1'
+              }
+            />
+            <Input
+              id={'email'}
+              title={'이름'}
+              className={
+                'text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicRegular p-[10px]'
+              }
+              type={'email'}
+              value={name}
+              onGetValue={(value) => setName(value)}
+              wrapperClassName={'flex flex-col mb-4'}
+              labelClassName={
+                'text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicBold mb-1'
+              }
+            />
+            <Textarea
+              id={'contact-textarea'}
+              title={'문의내용'}
+              row={10}
+              cols={40}
+              value={inquiry}
+              onGetValue={(value) => setInquiry(value)}
+              className={
+                'text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicRegular p-[10px]'
+              }
+              labelClassName={
+                'text-[15px] leading-[24px] text-[#4B5563] font-NanumGothicRegular mb-1'
+              }
+              wrapperClassName={'flex flex-col mb-7'}
+            />
+            <Button
+              className={
+                'flex items-center rounded-md bg-[#22C9EE] shadow-[0px_1px_1px_1px_rgba(0,0,0,0.07)] border-solid hover:border-[#22c9ee] py-3 px-4 mx-auto'
+              }
+            >
+              <p className='text-[15px] leading-[135%] tracking-[-0.18px] font-NanumGothicRegular text-[#FFFFFF]'>
+                메시지 보내기
+              </p>
+            </Button>
           </div>
         </div>
       </section>
       <section className="pt-[112px] pb-[104px] bg-[url('../public/assets/images/company-bg.png')] bg-no-repeat bg-cover bg-center">
-        <div className="max-w-xl mx-auto text-center">
-          <p className="text-[18px] leading-[135%] text-[#fff] tracking-[-0.26px] font-PoppinsMedium mb-1">Company Profile</p>
-          <h3 className="text-[36px] leading-[110%] text-[#fff] tracking-[-0.79px] font-PoppinsBold mb-5">Company Profile</h3>
-          <p className="text-[20px] leading-[160%] text-[#fff] tracking-[-0.33px] font-NanumGothicRegular mb-14">더 자세한 정보는 소개자료를 참고해주세요.</p>
+        <div className='max-w-xl mx-auto text-center'>
+          <p className='text-[18px] leading-[135%] text-[#fff] tracking-[-0.26px] font-PoppinsMedium mb-1'>
+            Company Profile
+          </p>
+          <h3 className='text-[36px] leading-[110%] text-[#fff] tracking-[-0.79px] font-PoppinsBold mb-5'>
+            Company Profile
+          </h3>
+          <p className='text-[20px] leading-[160%] text-[#fff] tracking-[-0.33px] font-NanumGothicRegular mb-14'>
+            더 자세한 정보는 소개자료를 참고해주세요.
+          </p>
           <Button
-              className={
-                'flex items-center rounded-md border bg-[#fff] shadow-[0px_1px_1px_1px_rgba(0,0,0,0.07)] border-solid border-[#D1D5DB] hover:border-[#22c9ee] py-[16px] px-[24px] mx-auto'
-              }
-            >
-              <Image
-                src={Download}
-                width={20}
-                height={20}
-                className='mr-[10px]'
-                alt='Download'
-              />
-              <p className='text-[19px] leading-[20px] tracking-[-0.3px] font-RubikMedium text-[#22C9EE]'>
+            className={
+              'flex items-center rounded-md border bg-[#fff] shadow-[0px_1px_1px_1px_rgba(0,0,0,0.07)] border-solid border-[#D1D5DB] hover:border-[#22c9ee] py-[16px] px-[24px] mx-auto'
+            }
+          >
+            <Image
+              src={Download}
+              width={20}
+              height={20}
+              className='mr-[10px]'
+              alt='Download'
+            />
+            <p className='text-[19px] leading-[20px] tracking-[-0.3px] font-RubikMedium text-[#22C9EE]'>
               Download Document
-              </p>
-            </Button>
+            </p>
+          </Button>
         </div>
       </section>
     </main>
