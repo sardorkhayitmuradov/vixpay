@@ -8,7 +8,7 @@ import Close from '../public/assets/icons/menu-close.svg';
 
 const Header = () => {
   const router = useRouter();
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className='py-5 fixed left-0 top-0 bg-white w-full z-10'>
       <div className='max-w-xl mx-auto flex items-center justify-between max-[450px]:px-6'>
