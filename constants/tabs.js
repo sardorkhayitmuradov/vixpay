@@ -4,62 +4,62 @@ const tabs = [
         title: "All",
         questions: [
             {
-                id: 1,
+                id: "1",
                 title: "q1",
                 description: "lorem1"
             },
             {
-                id: 2,
+                id: "2",
                 title: "q2",
                 description: "lorem2"
             },
             {
-                id: 3,
+                id: "3",
                 title: "q3",
                 description: "lorem3"
             },
             {
-                id: 4,
+                id: "4",
                 title: "q4",
                 description: "lorem4"
             },
             {
-                id: 5,
+                id: "5",
                 title: "q5",
                 description: "lorem5"
             },
             {
-                id: 6,
+                id: "6",
                 title: "q6",
                 description: "lorem6"
             },
             {
-                id: 8,
+                id: "8",
                 title: "q8",
                 description: "lorem8"
             },
             {
-                id: 9,
+                id: "9",
                 title: "q9",
                 description: "lorem9"
             },
             {
-                id: 10,
+                id: "10",
                 title: "q10",
                 description: "lorem10"
             },
             {
-                id: 11,
+                id: "11",
                 title: "q11",
                 description: "lorem11"
             },
             {
-                id: 12,
+                id: "12",
                 title: "q12",
                 description: "lorem12"
             },
             {
-                id: 13,
+                id: "13",
                 title: "q13",
                 description: "lorem13"
             },
