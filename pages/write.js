@@ -13,7 +13,7 @@ const Write = () => {
   const [inquiry, setInquiry] = useState('');
 
   return (
-    <main>
+    <main className='pt-20'>
       <section className='bg-[#0E7490]'>
         <div className='max-w-xl mx-auto py-[130px]'>
           <h2 className='text-[60px] leading-[100%] tracking-[-1.34px] font-PoppinsBold text-center text-[#fff]'>

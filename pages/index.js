@@ -54,7 +54,7 @@ export default function Home() {
     paginateFilteredTab(page);
   }, [page]);
   return (
-    <main>
+    <main className='pt-20'>
       <section className='max-[450px]:pb-[54px]'>
         <div className="max-w-xl mx-auto pt-[156px] pb-[194px] max-[450px]:pt-10 max-[450px]:pb-[100px] max-[450px]:text-center w-full bg-[url('../public/assets/images/hero-bg.png')] max-[450px]:bg-[url('../public/assets/icons/hero-mobile-bg.svg')] bg-no-repeat bg-[top_right_-24px] max-[450px]:bg-bottom">
           <h2 className='text-[52px] font-PoppinsRegular leading-[136%] mb-[60px] tracking-[-1.34px] text-[#111827] max-[450px]:px-6 max-w-[650px] w-full max-[450px]:text-[30px] max-[450px]:leading-[136%] max-[450px]:tracking-[-0.64px] max-[450px]:mb-10'>

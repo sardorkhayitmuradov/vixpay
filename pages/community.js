@@ -14,7 +14,7 @@ import { clientsLogo } from '@/constants/clientsLogo';
 const Community = () => {
   console.log(clients);
   return (
-    <main>
+    <main className='pt-20'>
       <section className='bg-[#0E7490] max-[450px]:py-0'>
         <div className='max-w-xl mx-auto py-[130px] max-[450px]:px-6 max-[450px]:py-[76px]'>
           <h2 className='text-[60px] leading-[100%] tracking-[-1.34px] font-PoppinsBold text-center text-[#fff] max-[450px]:text-[30px] max-[450px]:leading-[130%] max-[450px]:tracking-[-0.64px]'>
