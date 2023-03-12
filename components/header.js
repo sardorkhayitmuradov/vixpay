@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import Menu from '../public/assets/icons/menu.svg';
-import Logo from '../public/assets/icons/logo.svg';
-import Close from '../public/assets/icons/menu-close.svg';
+import Menu from '../public/assets/images/menu.svg';
+import Logo from '../public/assets/images/logo.svg';
+import Close from '../public/assets/images/menu-close.svg';
 
 const Header = () => {
   const router = useRouter();

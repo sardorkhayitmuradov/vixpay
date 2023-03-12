@@ -2,12 +2,12 @@ import Image from 'next/image';
 import vixcoApp from '../public/assets/images/vixco_app.png';
 import Button from '@/components/Button';
 import User from '../public/assets/images/user.jpg';
-import star from '../public/assets/icons/star.svg';
-import KumhotireClient from '../public/assets/icons/kumhotire-client.svg';
-import RounClient from '../public/assets/icons/roun-client.svg';
-import ArdenClient from '../public/assets/icons/arden-hill-client.svg';
-import HawtaiClient from '../public/assets/icons/hawtai-client.svg';
-import FoodServiceClient from '../public/assets/icons/foodservice-client.svg';
+import star from '../public/assets/images/star.svg';
+import KumhotireClient from '../public/assets/images/kumhotire-client.svg';
+import RounClient from '../public/assets/images/roun-client.svg';
+import ArdenClient from '../public/assets/images/arden-hill-client.svg';
+import HawtaiClient from '../public/assets/images/hawtai-client.svg';
+import FoodServiceClient from '../public/assets/images/foodservice-client.svg';
 import { clients } from '@/constants/clients';
 import { clientsLogo } from '@/constants/clientsLogo';
 

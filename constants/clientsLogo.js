@@ -1,22 +1,22 @@
 export const clientsLogo = [
     {
         "id": 1,
-        "image":"/assets/icons/kumhotire-client.svg"
+        "image":"/assets/images/kumhotire-client.svg"
     },
     {
         "id": 2,
-        "image":"/assets/icons/roun-client.svg"
+        "image":"/assets/images/roun-client.svg"
     },
     {
         "id": 3,
-        "image":"/assets/icons/arden-hill-client.svg"
+        "image":"/assets/images/arden-hill-client.svg"
     },
     {
         "id": 4,
-        "image":"/assets/icons/hawtai-client.svg"
+        "image":"/assets/images/hawtai-client.svg"
     },
     {
         "id": 5,
-        "image":"/assets/icons/foodservice-client.svg"
+        "image":"/assets/images/foodservice-client.svg"
     },
 ]

@@ -1,6 +1,6 @@
 import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-headless-accordion";
-import Plus from '../../../public/assets/icons/plus-tab.svg'
-import Minus from '../../../public/assets/icons/minus-tab.svg'
+import Plus from '../../../public/assets/images/plus-tab.svg'
+import Minus from '../../../public/assets/images/minus-tab.svg'
 import Image from "next/image";
 
 const TabAccordion = ({title,children, accordionHeaderClass}) => {

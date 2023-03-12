@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "@/components/Button";
-import AppStore from '../public/assets/icons/app-store.svg';
-import PlayMarket from '../public/assets/icons/google-play.svg';
+import AppStore from '../public/assets/images/app-store.svg';
+import PlayMarket from '../public/assets/images/google-play.svg';
 
 const ServiceProduct = () => {
   return (

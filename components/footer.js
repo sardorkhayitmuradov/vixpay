@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import FooterLogo from '../public/assets/icons/footer-logo.svg';
-import Facebook from '../public/assets/icons/facebook.svg';
-import Instagram from '../public/assets/icons/instagram.svg';
-import Twitter from '../public/assets/icons/twitter.svg';
-import Github from '../public/assets/icons/github.svg';
-import Dribble from '../public/assets/icons/dribble.svg';
-import Copyright from '../public/assets/icons/copyright.svg'
+import FooterLogo from '../public/assets/images/footer-logo.svg';
+import Facebook from '../public/assets/images/facebook.svg';
+import Instagram from '../public/assets/images/instagram.svg';
+import Twitter from '../public/assets/images/twitter.svg';
+import Github from '../public/assets/images/github.svg';
+import Dribble from '../public/assets/images/dribble.svg';
+import Copyright from '../public/assets/images/copyright.svg'
 
 const Footer = () => {
   return (
