@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Layout from '@/components/layout';
 import { NextIntlProvider } from 'next-intl';
 import '../styles/globals.css';
+import { useTina } from 'tinacms/dist/react';
 
 
 function App({ Component, pageProps }) {
