@@ -33,7 +33,6 @@ export default function Home(props) {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [inquiry, setInquiry] = useState('');
-  const [pageData, setPageData] = useState(undefined);
 
   const itemsPerPage = 5;
   const totalPages = Math.ceil(filteredTab.length / itemsPerPage);
@@ -62,34 +61,22 @@ export default function Home(props) {
     data: props.data,
   });
 
-  // useEffect(() => {
-  //   // if (data.homepage_texts_fetch != undefined) {
-  //     // }
-      
-  //       // setPageData(data);
-  //   console.log(data)
-  // }, []);
-
-  // if (pageData == undefined) {
-  //   return <div>Loading...</div>;
-  // }
+  let pageData = data.homepage_texts_fetch
 
   useEffect(() => {
-    // setPageData(data.homepage_texts_fetch);
     paginateFilteredTab(page);
-  }, [pageData]);
-
-  // console.log(data)
+  }, [page]);
+  console.log(pageData)
 
   return (
     <main className='pt-20'>
       <section className='max-[450px]:pb-[54px]'>
         <div className="max-w-xl mx-auto pt-[156px] pb-[194px] max-[450px]:pt-10 max-[450px]:pb-[100px] max-[450px]:text-center w-full bg-[url('../public/assets/images/hero-bg.png')] max-[450px]:bg-[url('../public/assets/images/hero-mobile-bg.svg')] bg-no-repeat bg-[top_right_-24px] max-[450px]:bg-bottom">
           <h1 className='text-[52px] font-PoppinsRegular leading-[136%] mb-[60px] tracking-[-1.34px] text-[#111827] max-[450px]:px-6 max-w-[650px] w-full max-[450px]:text-[30px] max-[450px]:leading-[136%] max-[450px]:tracking-[-0.64px] max-[450px]:mb-10'>
-            {/* {pageData.hero_title} */}
+            {pageData.hero_title}
           </h1>
           <p className='text-[24px] mb-[30px] font-PoppinsRegular leading-[135%] tracking-[-0.18px] uppercase max-[450px]:mb-10 max-[450px]:px-6'>
-          {/* {pageData.hero_subtitle} */}
+          {pageData.hero_subtitle}
           </p>
           <div className='flex items-center max-[450px]:flex-col max-[450px]:px-6 max-[450px]:mx-auto'>
             <Button
@@ -105,7 +92,7 @@ export default function Home(props) {
                 alt='app'
               />
               <p className='text-[18px] leading-[30px] font-PromptMedium'>
-              {/* {pageData.app_store} */}
+              {pageData.app_store}
               </p>
             </Button>
             <Button
@@ -121,7 +108,7 @@ export default function Home(props) {
                 alt='app'
               />
               <p className='text-[18px] leading-[30px] font-PromptMedium'>
-                Google play
+              {pageData.play_market}
               </p>
             </Button>
           </div>
@@ -130,17 +117,13 @@ export default function Home(props) {
       <section className='pt-[138px] pb-[122px] about-section max-[450px]:py-14'>
         <div className='max-w-xl mx-auto max-[450px]:px-6'>
           <h2 className='text-[36px] leading-[110%] font-PoppinsBold tracking-[-0.79px] text-white text-center mb-7 max-[450px]:text-[24px] max-[450px]:leading-[150%]'>
-            About VIXPAY
+            {pageData.about_vixpay}
           </h2>
           <p className='text-center max-w-[994px] w-full mx-auto text-[18px] mb-6 leading-[158%] tracking-[-0.26px] font-NanumGothicRegular text-white max-[450px]:text-[15px] max-[450px]:leading-[24px]'>
-            VIXPAY은 가맹점과 소비자를 연결해 주는 블록체인 플랫폼으로 <br />{' '}
-            복잡한 가입이나 충전 절차 없이 전국의 가맹점에서 간편하게 사용가능한
-            동시에 빅스페이의 리워드와 결제 기능을 지원합니다. 특히 소비자와
-            가맹점의 편의에 집중하여 QR코드를 제시하고 비밀번호만 입력하는
-            것으로 간편하게 사용할 수 있습니다.
+            {pageData.about_vixpay_text}
           </p>
           <p className='text-center max-w-[994px] w-full mx-auto text-[18px] leading-[158%] tracking-[-0.26px] font-NanumGothicRegular text-white max-[450px]:text-[15px] max-[450px]:leading-[24px]'>
-            VIXPAY은 2021년 4월 시범서비스 시작으로 6월 부터 서비스 예정입니다.
+            {pageData.about_vixpay_subtext}
           </p>
         </div>
       </section>
@@ -157,19 +140,13 @@ export default function Home(props) {
               />
               <div className='max-w-[575px] w-full text-right max-[450px]:text-center'>
                 <span className='text-[18px] mb-3 leading-[135%] tracking-[-0.26px] text-[#6B7280] font-PoppinsMedium max-[450px]:text-[15px]'>
-                  VIXPAY Blockchain Network
+                  {pageData.vixpay_blockchain}
                 </span>
                 <h3 className='text-[36px] mb-7 max-[450px]:text-[24px] max-[450px]:leading-[150%] max-[450px]:tracking-[-0.47px] max-[450px]:max-w-[300px] max-[450px]:w-full max-[450px]:mx-auto leading-[110%] tracking-[-0.79px] text-[#1F2937] font-PoppinsBold'>
-                  Cryptocurrency ecosystem for your business
+                {pageData.vixpay_blockchain_text}
                 </h3>
                 <p className='text-[18px] mb-11 leading-[158%] tracking-[-0.26px] text-[#4B5563] font-PoppinsRegular max-[450px]:text-[15px] max-[450px]:leading-[24px] max-[450px]:text-center'>
-                  VIXPAY Blockchain Network는 참여자들로부터 생성된 결제
-                  데이터가 저장되는 Hyperledger Fabric 기반의 Private 블록체인
-                  입니다.이더리움의 ERC20 Token과 호환이 되는 자체 Token
-                  플랫폼을 제공하고,토큰을 실생활에 사용할 수 있도록 Yollet
-                  결제시스템과 연결되고참여자들은 VIXPAY에서 제공되는 Wallet,
-                  API, 블록스캔 기능을 이용해 자유롭게 다양한 생태계를 구성할 수
-                  있습니다.
+                  {pageData.vixpay_blockchain_subtext}
                 </p>
                 <Link href={`/serviceproduct` + "#vixpay" }
                   className={
@@ -177,7 +154,7 @@ export default function Home(props) {
                   }
                 >
                   <p className='text-[19px] max-[450px]:text-[14px] max-[450px]:leading-[135%] max-[450px]:tracking-[-0.09px] leading-[20px] font-RubikSemibold tracking-[-0.3px] text-[#4B5563]'>
-                    Learn more
+                    {pageData.learn}
                   </p>
                 </Link>
               </div>
@@ -192,23 +169,16 @@ export default function Home(props) {
               />
               <div className='max-w-[574px] w-full'>
                 <span className='text-[18px] mb-3 leading-[135%] tracking-[-0.26px] text-[#6B7280] font-PoppinsMedium max-[450px]:text-center max-[450px]:block max-[450px]:text-[15px] max-[450px]:leading-[135%]'>
-                  VIXPAY Payment System
+                  {pageData.vixpay_payment_system}
                 </span>
                 <h3 className='text-[36px] mb-7 leading-[110%] tracking-[-0.79px] text-[#1F2937] font-NotoSansKoreanMedium max-[450px]:text-[24px] max-[450px]:leading-[150%] max-[450px]:tracking-[-0.47px] max-[450px]:max-w-[300px] max-[400px]:max-w-[250px] max-[450px]:mx-auto max-[450px]:text-center'>
-                  블록체인 기반의 지불 / 결제 시스템
+                  {pageData.vixpay_payment_system_title}
                 </h3>
                 <p className='text-[18px] mb-11 leading-[158%] tracking-[-0.26px] text-[#4B5563] font-PoppinsRegular max-[450px]:text-[15px] max-[450px]:leading-[24px] max-[450px]:text-center'>
-                  VIXPAY Payment는 현금, 신용카드, 모바일 결제를 이르는 모든
-                  결제 수단에 ERC20 기반의 Token 결제와 리워드를
-                  제공합니다.탈중앙화 거래를 통해 빠른 결제 처리가 가능하고
-                  블록체인 기술을 통해 결제 단위로 정산결과를 확인하여 데이터의
-                  투명성 및 무결성을 원천적으로 보장하는 결제시스템 입니다.
+                  {pageData.vixpay_payment_system_text}
                 </p>
                 <p className='text-[18px] mb-11 leading-[158%] tracking-[-0.26px] text-[#4B5563] font-PoppinsRegular max-[450px]:text-[15px] max-[450px]:leading-[24px] max-[450px]:text-center'>
-                  {' '}
-                  VIXPAY Payment는 EMV L1/L2, EMV, Contactless L1, VISA, MASTER,
-                  AMEX, UNION Pay Brand 인증, PCI PTS 4.X 인증 등 글로벌 최고의
-                  보안 수준을 제공합니다.
+                  {pageData.vixpay_payment_system_subtext}
                 </p>
                 <Link href={`/serviceproduct` + "#vixpaypayment"}
                   className={
@@ -216,7 +186,7 @@ export default function Home(props) {
                   }
                 >
                   <p className='text-[19px] max-[450px]:text-[14px] max-[450px]:leading-[135%] max-[450px]:tracking-[-0.09px] leading-[20px] font-RubikSemibold tracking-[-0.3px] text-[#4B5563]'>
-                    Learn more
+                    {pageData.learn}
                   </p>
                 </Link>
               </div>
@@ -228,31 +198,31 @@ export default function Home(props) {
         <div className='max-w-xl mx-auto'>
           <div className='text-center'>
             <p className='font-PoppinsMedium mb-1 text-[18px] max-[450px]:text-[15px] max-[450px]:tracking-[-0.18px] leading-[135%] text-[#6B7280] tracking-[-0.26px] max-[450px]:mb-3'>
-              Clients
+              {pageData.clients}
             </p>
             <h2 className='font-PoppinsBold max-[450px]:text-[24px] max-[450px]:leading-[150%] max-[450px]:tracking-[-0.47px] mb-5 text-[36px] leading-[110%] text-[#1F2937] tracking-[-0.79px] max-[450px]:mb-[14px]'>
-              Our clients
+              {pageData.clients_text}
             </h2>
             <p className='font-NotoSansKoreanRegular mb-5 text-[18px] leading-[158%] text-[#4B5563] tracking-[-0.26px] max-[450px]:text-[15px] max-[450px]:leading-[24px] max-[450px]:mb-0'>
-              최고의 파트너와 함께 합니다.
+              {pageData.clients_subtext}
             </p>
           </div>
           <ul className='flex items-center flex-wrap justify-between gap-y-[90px] max-[450px]:gap-y-10'>
-            {companyClients.length > 0 &&
-              companyClients.map((client) => (
+            {pageData.clients_items.length > 0 &&
+              pageData.clients_items.map((client, index) => (
                 <li
-                  key={client.id}
+                  key={index}
                   className='max-w-[610px] w-full flex items-center justify-between max-[450px]:flex-col'
                 >
                   <Image
-                    src={client.imageDesktop}
+                    src={client.icon}
                     width={150}
                     height={150}
                     className='max-[450px]:hidden'
                     alt='company-logo'
                   />
                   <Image
-                    src={client.imageDesktop}
+                    src={client.icon_mobile}
                     width={200}
                     height={150}
                     className='max-[450px]:inline-block hidden'
@@ -260,13 +230,13 @@ export default function Home(props) {
                   />
                   <div className='max-w-[400px] w-full'>
                     <h3 className='text-[24px] max-[450px]:text-center leading-[150%] font-NotoSansKoreanMedium text-[#06B6D4] mb-3'>
-                      {client.companyTitle}
+                      {client.title}
                     </h3>
                     <p className='text-[15px] leading-[24px] text-[#1F2937] font-NotoSansKoreanRegular mb-3'>
-                      {client.companyInfo}
+                      {client.description}
                     </p>
                     <p className='text-[16px] leading-[24px] font-PoppinsSemibold'>
-                      {client.companyWebsite}
+                      {client.link}
                     </p>
                   </div>
                 </li>
@@ -278,80 +248,33 @@ export default function Home(props) {
         <div className='max-w-xl mx-auto'>
           <div className='text-center mb-20 max-[450px]:mb-10'>
             <p className='font-PoppinsMedium mb-1 max-[450px]:mb-3 text-[18px] max-[450px]:text-[15px] leading-[135%] text-[#6B7280] tracking-[-0.26px]'>
-              Service
+              {pageData.service}
             </p>
             <h2 className='font-PoppinsBold mb-5 text-[36px] max-[450px]:text-[24px] max-[450px]:mb-7 leading-[110%] text-[#1F2937] tracking-[-0.79px]'>
-              VIXPAY Solutions
+              {pageData.service_text}
             </h2>
             <p className='font-NotoSansKoreanRegular text-[18px] leading-[150%] text-[#4B5563] tracking-[-0.26px] max-w-[824px] w-full mx-auto max-[450px]:text-[15px] max-[450px]:leading-[160%]'>
-              VIXPAY 솔루션을 이용해 사업자, 상점, 소비자를 통합하는 서비스를
-              제공할 수 있습니다. VIXPAY 솔루션은 온라인과 오프라인을 통합하고
-              다양한 사용자를 연결하는 독창적인 비즈니스 아이디어를 실현할 수
-              있도록 제공합니다.
+              {pageData.service_subtext}
             </p>
           </div>
           <ul className='flex items-center justify-between flex-wrap max-w-[800px] w-full mx-auto gap-y-20 max-[450px]:gap-y-12'>
-            <li className='flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300'>
-              <p className='text-[24px] max-[450px]:text-[18px] max-[450px]:leading-[135%] max-[450px]:tracking-[-0.26px] leading-[150%] max-[450px]:mb-5 font-PoppinsMedium text-[#06B6D4] mb-6'>
-                Yoshop POS
-              </p>
-              <Image
-                src={YoshoPos}
-                width={326}
-                height={200}
-                className='serviceImage mb-6 max-[450px]:mb-5'
-                alt='service'
-              />
-              <p className='text-[15px] leading-[24px] text-[#1F2937] font-NanumGothicBold'>
-                매장에서 사용 가능한 스마트 POS 시스템
-              </p>
-            </li>
-            <li className='flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300'>
-              <p className='text-[24px] max-[450px]:text-[18px] max-[450px]:leading-[135%] max-[450px]:tracking-[-0.26px] leading-[150%]  font-PoppinsMedium text-[#06B6D4] mb-6'>
-                Yoshop POS
-              </p>
-              <Image
-                src={YoshoPos}
-                width={326}
-                height={200}
-                className='serviceImage mb-6 max-[450px]:mb-5'
-                alt='service'
-              />
-              <p className='text-[15px] leading-[24px] text-[#1F2937] font-NanumGothicBold'>
-                매장에서 사용 가능한 스마트 POS 시스템
-              </p>
-            </li>
-            <li className='flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300'>
+            {pageData.service_items.length > 0 && pageData.service_items.map((service,index) => (
+              <li key={index} className='flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300'>
               <p className='text-[24px] max-[450px]:text-[18px] max-[450px]:leading-[135%] max-[450px]:tracking-[-0.26px] leading-[150%] font-PoppinsMedium text-[#06B6D4] mb-6'>
-                VIXPAY Payment
+                {service.title}
               </p>
               <Image
-                src={VixpayPay}
+                src={service.icon}
                 width={326}
                 height={200}
                 className='serviceImage mb-6 max-[450px]:mb-5'
                 alt='service'
               />
               <p className='text-[15px] leading-[24px] text-[#1F2937] font-NanumGothicBold'>
-                신용카드, 현금, 쿠폰, 암호화폐 등모 든 결제수단을 지원할 수 있는
-                PG 서비스
+                {service.description}
               </p>
             </li>
-            <li className='flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300'>
-              <p className='text-[24px] max-[450px]:text-[18px] max-[450px]:leading-[135%] max-[450px]:tracking-[-0.26px] leading-[150%] font-PoppinsMedium text-[#06B6D4] mb-6'>
-                VIXPAY Network
-              </p>
-              <Image
-                src={VixpayNetwork}
-                width={326}
-                height={200}
-                className='serviceImage mb-6 max-[450px]:mb-5'
-                alt='service'
-              />
-              <p className='text-[15px] leading-[24px] text-[#1F2937] font-NanumGothicBold'>
-                하이퍼레져 기반의 암호화폐 Eco system
-              </p>
-            </li>
+            ))}
           </ul>
         </div>
       </section>

@@ -28,8 +28,8 @@
     {
       "title": "㈜로운아뜨리움",
       "description": "로운아뜨리움은 대한민국예술인센터 안에 위치하여 다양한 예술적인 공간을 통해 삶을 풍요롭게 하고현대인의 라이프스타일에 의미았는 변화를 추구합니다. 웨딩, 공연,  갤러리 모든 것을 할 수 있는 목동의 복합 문화공간입니다.",
-      "icon": "/assets/images/kumhotire.svg",
-      "icon_mobile": "/assets/images/kumhotire-mobile.svg",
+      "icon": "/assets/images/roun.svg",
+      "icon_mobile": "/assets/images/roun-mobile.svg",
       "link": "rounatrium.com"
     },
     {
@@ -50,7 +50,7 @@
       "title": "화타이코리아㈜",
       "description": "화타이자동차(华泰汽车, HAWTAI MOTOR)는 베이징에 본사를 둔 스포츠유틸리티차(SUV), 세단, 왜건, 전기자동차를 생산하는 중국 자동차 제조업체입니다.",
       "icon": "/assets/images/hawtai.svg",
-      "icon_mobile": "/assets/images/hawtai-mobile.sv",
+      "icon_mobile": "/assets/images/hawtai-mobile.svg",
       "link": ""
     }
   ],
@@ -71,7 +71,7 @@
     {
       "title": "",
       "description": "",
-      "icon": "/assets/images/vixpay-apps.png"
+      "icon": "/assets/images/vixpay-apps.svg"
     },
     {
       "title": "VIXPAY Network",
