@@ -21,14 +21,19 @@ import Download from '../public/assets/images/download.svg';
 import { companyClients } from '@/constants/companyClients';
 import Select from '@/components/Select';
 import Link from 'next/link';
+import { useTina } from "tinacms/dist/react";
+import { getLangTina } from '@/functions/get_lang_tina';
+import CustomFormattedMessage from '@/components/CustomFormattedMessage/CustomFormattedMessage';
+import CustomFormattedImage from '@/components/CustomFormattedImage/CustomFormattedImage';
 
-export default function Home() {
+export default function Home(props) {
   const [activeTab, setActiveTab] = useState(1);
   const [filteredTab, setFilteredTab] = useState(tabs.at(0).questions);
   const [page, setPage] = useState(1);
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [inquiry, setInquiry] = useState('');
+  const [pageData, setPageData] = useState(undefined);
 
   const itemsPerPage = 5;
   const totalPages = Math.ceil(filteredTab.length / itemsPerPage);
@@ -50,18 +55,41 @@ export default function Home() {
   //     }
   //   })
   // };
+
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  });
+
+  // useEffect(() => {
+  //   // if (data.homepage_texts_fetch != undefined) {
+  //     // }
+      
+  //       // setPageData(data);
+  //   console.log(data)
+  // }, []);
+
+  // if (pageData == undefined) {
+  //   return <div>Loading...</div>;
+  // }
+
   useEffect(() => {
+    // setPageData(data.homepage_texts_fetch);
     paginateFilteredTab(page);
-  }, [page]);
+  }, [pageData]);
+
+  // console.log(data)
+
   return (
     <main className='pt-20'>
       <section className='max-[450px]:pb-[54px]'>
         <div className="max-w-xl mx-auto pt-[156px] pb-[194px] max-[450px]:pt-10 max-[450px]:pb-[100px] max-[450px]:text-center w-full bg-[url('../public/assets/images/hero-bg.png')] max-[450px]:bg-[url('../public/assets/images/hero-mobile-bg.svg')] bg-no-repeat bg-[top_right_-24px] max-[450px]:bg-bottom">
-          <h2 className='text-[52px] font-PoppinsRegular leading-[136%] mb-[60px] tracking-[-1.34px] text-[#111827] max-[450px]:px-6 max-w-[650px] w-full max-[450px]:text-[30px] max-[450px]:leading-[136%] max-[450px]:tracking-[-0.64px] max-[450px]:mb-10'>
-            가맹점과 소비자를 간편하게연결하는 블록체인 솔루션
-          </h2>
+          <h1 className='text-[52px] font-PoppinsRegular leading-[136%] mb-[60px] tracking-[-1.34px] text-[#111827] max-[450px]:px-6 max-w-[650px] w-full max-[450px]:text-[30px] max-[450px]:leading-[136%] max-[450px]:tracking-[-0.64px] max-[450px]:mb-10'>
+            {/* {pageData.hero_title} */}
+          </h1>
           <p className='text-[24px] mb-[30px] font-PoppinsRegular leading-[135%] tracking-[-0.18px] uppercase max-[450px]:mb-10 max-[450px]:px-6'>
-            Download VIXPAY App for your business
+          {/* {pageData.hero_subtitle} */}
           </p>
           <div className='flex items-center max-[450px]:flex-col max-[450px]:px-6 max-[450px]:mx-auto'>
             <Button
@@ -77,7 +105,7 @@ export default function Home() {
                 alt='app'
               />
               <p className='text-[18px] leading-[30px] font-PromptMedium'>
-                App Store
+              {/* {pageData.app_store} */}
               </p>
             </Button>
             <Button
@@ -563,8 +591,13 @@ export default function Home() {
 }
 
 export async function getStaticProps(context) {
+  const pageResponse = await getLangTina(context.locale);
+  
   return {
     props: {
+      data: pageResponse.data,
+      query: pageResponse.query,
+      variables: pageResponse.variables,
       messages: (await import(`../messages/${context.locale}.json`)).default,
     },
   };

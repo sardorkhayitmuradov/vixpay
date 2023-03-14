@@ -23,7 +23,7 @@ const Header = () => {
           alt='menu'
           className='hidden max-[450px]:inline-block'
         />
-        <nav className='max-w-[1100px] w-full max-[450px]:hidden'>
+        <nav className='max-w-[1000px] w-full max-[450px]:hidden'>
           <ul className='flex items-center justify-between w-full'>
             <li>
               <Link
@@ -75,7 +75,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={`http://www.yollet.net/doc/block-api-reference.html`}
+                href={`https://docs.finenex.net/`}
                 target='_blank'
                 className={`py-2 text-[#4B5563] hover:text-[#22C9EE] font-PoppinsBold text-[18px] leading-[135%] tracking-[-0.26px] px-3 ${
                   router.pathname == '/resource'
@@ -88,7 +88,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href='https://yollet-scan.vercel.app/'
+                href='https://vixco-scan.finenex.net/'
                 target='_blank'
                 className={`py-2 text-[#22C9EE] font-PoppinsBold text-[18px] leading-[135%] tracking-[-0.26px] px-3 ${
                   router.pathname == '/scan'
@@ -97,18 +97,6 @@ const Header = () => {
                 }`}
               >
                 VIXCOScan
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/` + '#services'}
-                className={`py-2 text-[#4B5563] hover:text-[#22C9EE] font-PoppinsBold text-[18px] leading-[135%] tracking-[-0.26px] px-3 ${
-                  router.pathname == '/services'
-                    ? 'bg-[#CFF8FE] hover:text-[#4b5563] rounded-[8px]'
-                    : ''
-                }`}
-              >
-                Partners Service
               </Link>
             </li>
             {/* <li>
@@ -204,7 +192,7 @@ const Header = () => {
             </li>
             <li className='mb-3' onClick={() => setIsOpen(false)}>
               <Link
-                href={'https://yollet-scan.vercel.app/'}
+                href={'https://vixco-scan.finenex.net/'}
                 className={`text-[#4B5563] hover:text-[#22C9EE] font-PoppinsBold text-[15px] leading-[135%] tracking-[-0.26px] ${
                   router.pathname == '/scan'
                     ? 'rounded-[8px] px-5 bg-[#CFF8FE]'
@@ -212,18 +200,6 @@ const Header = () => {
                 }`}
               >
                 VIXCOScan
-              </Link>
-            </li>
-            <li className='mb-3' onClick={() => setIsOpen(false)}>
-              <Link
-                href={`/` + '#services'}
-                className={`text-[#4B5563] hover:text-[#22C9EE] font-PoppinsBold text-[15px] leading-[135%] tracking-[-0.26px] ${
-                  router.pathname == '/contact'
-                    ? 'rounded-[8px] px-5 bg-[#CFF8FE]'
-                    : ''
-                }`}
-              >
-                Partners Service
               </Link>
             </li>
           </ul>

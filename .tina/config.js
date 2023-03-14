@@ -1,4 +1,5 @@
 import { defineConfig } from "tinacms";
+import { home } from "./custom_schemas/home";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -29,30 +30,7 @@ export default defineConfig({
   },
   schema: {
     collections: [
-      {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
-        ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
-      },
+      home
     ],
   },
 });
