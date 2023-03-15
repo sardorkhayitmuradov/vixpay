@@ -122,17 +122,17 @@ export const home = {
             },
           },
           {
-            label: "Icon",
+            label: "Client Image",
             name: "icon",
             type: "image",
             parse: (media) => {
               return `${media}`; // This is how the image is saved in public/uploads
             },
-            previewSrc: (fullSrc) => fullSrc.replace("/public/assets/images", ""), //This is what is shown after inserted
+            previewSrc: (fullSrc) => fullSrc.replace("/public", ""), //This is what is shown after inserted
           },
           {
-            label: "Icon mobile",
-            name: "icon_mobile",
+            label: "Client Image Mobile",
+            name: "iconMobile",
             type: "image",
             parse: (media) => {
               return `${media}`; // This is how the image is saved in public/uploads
