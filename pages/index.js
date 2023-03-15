@@ -219,7 +219,7 @@ export default function Home(props) {
                     alt='company-logo'
                   />
                   <Image
-                    src={client.icon_mobile}
+                    src={client.iconMobile}
                     width={200}
                     height={150}
                     className='max-[450px]:inline-block hidden'
