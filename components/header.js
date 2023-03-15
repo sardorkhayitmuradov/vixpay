@@ -74,7 +74,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link
+              {/* <Link
                 href={`https://docs.finenex.net/`}
                 target='_blank'
                 className={`py-2 text-[#4B5563] hover:text-[#22C9EE] font-PoppinsBold text-[18px] leading-[135%] tracking-[-0.26px] px-3 ${
@@ -84,7 +84,7 @@ const Header = () => {
                 }`}
               >
                 Resource
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link
@@ -179,7 +179,7 @@ const Header = () => {
               </Link>
             </li>
             <li className='mb-3' onClick={() => setIsOpen(false)}>
-              <Link
+              {/* <Link
                 href={'http://www.yollet.net/doc/block-api-reference.html'}
                 className={`text-[#4B5563] hover:text-[#22C9EE] font-PoppinsBold text-[15px] leading-[135%] tracking-[-0.26px] ${
                   router.pathname == '/resource'
@@ -188,7 +188,7 @@ const Header = () => {
                 }`}
               >
                 Resource
-              </Link>
+              </Link> */}
             </li>
             <li className='mb-3' onClick={() => setIsOpen(false)}>
               <Link

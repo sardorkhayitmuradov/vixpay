@@ -16,47 +16,42 @@
   "vixpay_payment_system_subtext": "VIXPAY Payment는 현금, 신용카드, 모바일 결제를 이르는 모든 결제 수단에 ERC20 기반의 Token 결제와 리워드를 제공합니다.탈중앙화 거래를 통해 빠른 결제 처리가 가능하고 블록체인 기술을 통해 결제 단위로 정산결과를 확인하여 데이터의 투명성 및 무결성을 원천적으로 보장하는 결제시스템 입니다.",
   "clients": "Clients",
   "clients_text": "Our clients",
-  "clients_subtext" : "최고의 파트너와 함께 합니다.",
+  "clients_subtext": "최고의 파트너와 함께 합니다.",
   "clients_items": [
     {
       "title": "금호타이어㈜",
       "description": "동사는 2003년 금호산업 타이어산업부의 자산부채 현물출자 및 영업양수도를 통해 설립되었음. 한국, 중국, 미국, 베트남에 위치한 8개 타이어 생산공장을 토대로 글로벌 생산체계를 구축하고, 전세계 판매 네트워크를 갖춘 타이어 제조, 판매 기업임.",
       "icon": "/assets/images/kumhotire.svg",
-      "icon_mobile": "/assets/images/kumhotire-mobile.svg",
-      "link": "kumhotire.com"
+      "icon_mobile": "/assets/images/kumhotire-mobile.svg"
     },
     {
       "title": "㈜로운아뜨리움",
       "description": "로운아뜨리움은 대한민국예술인센터 안에 위치하여 다양한 예술적인 공간을 통해 삶을 풍요롭게 하고현대인의 라이프스타일에 의미았는 변화를 추구합니다. 웨딩, 공연,  갤러리 모든 것을 할 수 있는 목동의 복합 문화공간입니다.",
       "icon": "/assets/images/roun.svg",
-      "icon_mobile": "/assets/images/roun-mobile.svg",
-      "link": "rounatrium.com"
+      "icon_mobile": "/assets/images/roun-mobile.svg"
     },
     {
       "title": "아덴힐리조트&골프㈜",
       "description": "자연과 통하는 곳 평온하고 아득한 언덕위의 신비로운 공간 선택받은 분들을 위한 리조트 & 골프",
       "icon": "/assets/images/arden-hill.svg",
-      "icon_mobile": "/assets/images/arden-hill-mobile.svg",
-      "link": "ardenhill.co.kr"
+      "icon_mobile": "/assets/images/arden-hill-mobile.svg"
     },
     {
       "title": "(사)한국외식업중앙회",
       "description": "국민영양과 보건향상 및 식품위생수준 향상에 기여하고, 일반음식점 영업자 회원간의 화합과 복리 및 권익 증진을 통한식문화 향상 도모. (업권 및 권익보호, 음식문화 개선, 식품위생 수준 향상)",
       "icon": "/assets/images/foodservice.svg",
-      "icon_mobile": "/assets/images/foodservice-mobile.svg",
-      "link": "foodservice.co.kr"
+      "icon_mobile": "/assets/images/foodservice-mobile.svg"
     },
     {
       "title": "화타이코리아㈜",
       "description": "화타이자동차(华泰汽车, HAWTAI MOTOR)는 베이징에 본사를 둔 스포츠유틸리티차(SUV), 세단, 왜건, 전기자동차를 생산하는 중국 자동차 제조업체입니다.",
       "icon": "/assets/images/hawtai.svg",
-      "icon_mobile": "/assets/images/hawtai-mobile.svg",
-      "link": ""
+      "icon_mobile": "/assets/images/hawtai-mobile.svg"
     }
   ],
   "service": "Service",
   "service_text": "VIXPAY Solutions",
-  "service_subtext" : "VIXPAY 솔루션을 이용해 사업자, 상점, 소비자를 통합하는 서비스를 제공할 수 있습니다. VIXPAY 솔루션은 온라인과 오프라인을 통합하고 다양한 사용자를 연결하는 독창적인 비즈니스 아이디어를 실현할 수 있도록 제공합니다.",
+  "service_subtext": "VIXPAY 솔루션을 이용해 사업자, 상점, 소비자를 통합하는 서비스를 제공할 수 있습니다. VIXPAY 솔루션은 온라인과 오프라인을 통합하고 다양한 사용자를 연결하는 독창적인 비즈니스 아이디어를 실현할 수 있도록 제공합니다.",
   "service_items": [
     {
       "title": "Yoshop POS",
@@ -81,22 +76,22 @@
   ],
   "faq": "FAQ",
   "faq_text": "Frequently asked questions",
-  "faq_subtext" : "자주하시는 질문과 궁금해 하시는 질문들을 정리했습니다.",
+  "faq_subtext": "자주하시는 질문과 궁금해 하시는 질문들을 정리했습니다.",
   "contact": "Contact Us",
   "contact_text": "Get started with VIXPAY",
-  "contact_subtext" : "VIXPAY은 e-commerce를 운영하시는 분들에게 꼭 필요한 서비스를 만듭니다. 좋은 경험을 심하는 것만으로도 부족한 하루, 어제보다 더 풍요로운 오늘이 될 수있도록 문제를 찾아 해결합니다",
+  "contact_subtext": "VIXPAY은 e-commerce를 운영하시는 분들에게 꼭 필요한 서비스를 만듭니다. 좋은 경험을 심하는 것만으로도 부족한 하루, 어제보다 더 풍요로운 오늘이 될 수있도록 문제를 찾아 해결합니다",
   "location": "Location",
   "location_image": "/assets/images/location.svg",
-  "location_subtext" : "서울특별시 금천구 가산디지털2로 53, 1901~1902호(가산동,한라시그마밸리)(주)나우앤페이",
+  "location_subtext": "서울특별시 금천구 가산디지털2로 53, 1901~1902호(가산동,한라시그마밸리)(주)나우앤페이",
   "tel": "Tel",
   "tel_image": "assets/images/tel.svg",
-  "tel_subtext" : "(+82) 02 3285 0555",
-  "email_input" : "이메일",
-  "name_input" : "이름",
-  "inquiry_input" : "메시지 보내기",
-  "company":"Company Profile",
-  "company_text":"Company Introduction",
-  "company_subtext":"더 자세한 정보는 소개자료를 참고해주세요.",
-  "company_button":"Download Document",
-  "company_button_icon":"assets/images/download.svg"
+  "tel_subtext": "(+82) 02 3285 0555",
+  "email_input": "이메일",
+  "name_input": "이름",
+  "inquiry_input": "메시지 보내기",
+  "company": "Company Profile",
+  "company_text": "Company Introduction",
+  "company_subtext": "더 자세한 정보는 소개자료를 참고해주세요.",
+  "company_button": "Download Document",
+  "company_button_icon": "assets/images/download.svg"
 }
