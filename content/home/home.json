@@ -66,12 +66,12 @@
     {
       "title": "VIXPAY Payment",
       "description": "신용카드, 현금, 쿠폰, 암호화폐 등모 든 결제수단을 지원할 수 있는 PG 서비스",
-      "icon": "/assets/images/vixpay-payment.png"
+      "icon": "/assets/images/vixpayPayment.svg"
     },
     {
       "title": "VIXPAY Network",
       "description": "하이퍼레져 기반의 암호화폐 Eco system",
-      "icon": "/assets/images/vixpay-network.png"
+      "icon": "/assets/images/vixpayNetwork.svg"
     }
   ],
   "faq": "FAQ",
