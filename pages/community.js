@@ -1,18 +1,11 @@
 import Image from 'next/image';
-import vixcoApp from '../public/assets/images/vixco_app.png';
+import vixcoApp from '../public/assets/images/vixco_app.svg';
 import Button from '@/components/Button';
-import User from '../public/assets/images/user.jpg';
 import star from '../public/assets/images/star.svg';
-import KumhotireClient from '../public/assets/images/kumhotire-client.svg';
-import RounClient from '../public/assets/images/roun-client.svg';
-import ArdenClient from '../public/assets/images/arden-hill-client.svg';
-import HawtaiClient from '../public/assets/images/hawtai-client.svg';
-import FoodServiceClient from '../public/assets/images/foodservice-client.svg';
 import { clients } from '@/constants/clients';
 import { clientsLogo } from '@/constants/clientsLogo';
 
 const Community = () => {
-  console.log(clients);
   return (
     <main className='pt-20'>
       <section className='bg-[#0E7490] max-[450px]:py-0'>

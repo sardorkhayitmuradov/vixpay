@@ -8,9 +8,6 @@ import AppStore from '../public/assets/images/app-store.svg';
 import PlayMarket from '../public/assets/images/google-play.svg';
 import CryptoCurrency from '../public/assets/images/cryptocurrency-ecosystem.png';
 import VixpayPayment from '../public/assets/images/vixpay-system.png';
-import YoshoPos from '../public/assets/images/yoshopPos.png';
-import VixpayNetwork from '../public/assets/images/vixpay-network.png';
-import VixpayPay from '../public/assets/images/vixpay-payment.png';
 import tabs from '../constants/tabs';
 import TabNavItem from '@/components/Tabs/TabNavItem/TabNavItem';
 import TabAccordion from '@/components/Tabs/TabAccordion/TabAccordion';
@@ -66,7 +63,7 @@ export default function Home(props) {
   useEffect(() => {
     paginateFilteredTab(page);
   }, [page]);
-  console.log(pageData)
+  // console.log(pageData)
 
   return (
     <main className='pt-20'>

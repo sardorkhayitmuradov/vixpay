@@ -128,7 +128,7 @@ export const home = {
             parse: (media) => {
               return `${media}`; // This is how the image is saved in public/uploads
             },
-            previewSrc: (fullSrc) => fullSrc.replace("/public", ""), //This is what is shown after inserted
+            previewSrc: (fullSrc) => fullSrc.replace("/public/assets/images", ""), //This is what is shown after inserted
           },
           {
             label: "Icon mobile",

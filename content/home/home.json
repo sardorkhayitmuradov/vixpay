@@ -56,17 +56,17 @@
     {
       "title": "Yoshop POS",
       "description": "매장에서 사용 가능한 스마트 POS 시스템",
-      "icon": "/assets/images/yoshopPos.png"
-    },
-    {
-      "title": "VIXPAY Payment",
-      "description": "신용카드, 현금, 쿠폰, 암호화폐 등모 든 결제수단을 지원할 수 있는 PG 서비스",
-      "icon": "/assets/images/vixpay-payment.png"
+      "icon": "/assets/images/yoshopPos.svg"
     },
     {
       "title": "",
       "description": "",
       "icon": "/assets/images/vixpay-apps.svg"
+    },
+    {
+      "title": "VIXPAY Payment",
+      "description": "신용카드, 현금, 쿠폰, 암호화폐 등모 든 결제수단을 지원할 수 있는 PG 서비스",
+      "icon": "/assets/images/vixpay-payment.png"
     },
     {
       "title": "VIXPAY Network",
@@ -84,7 +84,7 @@
   "location_image": "/assets/images/location.svg",
   "location_subtext": "서울특별시 금천구 가산디지털2로 53, 1901~1902호(가산동,한라시그마밸리)(주)나우앤페이",
   "tel": "Tel",
-  "tel_image": "assets/images/tel.svg",
+  "tel_image": "/assets/images/tel.svg",
   "tel_subtext": "(+82) 02 3285 0555",
   "email_input": "이메일",
   "name_input": "이름",
@@ -93,5 +93,5 @@
   "company_text": "Company Introduction",
   "company_subtext": "더 자세한 정보는 소개자료를 참고해주세요.",
   "company_button": "Download Document",
-  "company_button_icon": "assets/images/download.svg"
+  "company_button_icon": "/assets/images/download.svg"
 }

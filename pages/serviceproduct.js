@@ -29,7 +29,7 @@ const ServiceProduct = () => {
           </p>
         </div>
       </section>
-      <section id="vixpaypayment" className="bg-[url('../public/assets/images/vixpay-payment-service.png')] bg-cover h-[360px] bg-no-repeat"></section>
+      <section id="vixpaypayment" className="bg-[url('../public/assets/images/vixpay-payment-service.svg')] bg-cover h-[360px] bg-no-repeat"></section>
       <section className='pt-[56px] pb-[102px]'>
         <div className='max-w-[1109px] w-full mx-auto'>
           <h3 className='text-[24px] leading-[150%] tracking-[-0.47px] text-[#111827] font-PoppinsBold mb-6'>
@@ -57,7 +57,7 @@ const ServiceProduct = () => {
           </ul>
         </div>
       </section>
-      <section id="vixpay" className="bg-[url('../public/assets/images/vixpay.png')] bg-cover h-[360px] bg-no-repeat"></section>
+      <section id="vixpay" className="bg-[url('../public/assets/images/vixpay.svg')] bg-cover h-[360px] bg-no-repeat"></section>
       <section className='pt-[56px] pb-[102px]' id="vixpay">
         <div className='max-w-[1109px] w-full mx-auto'>
           <h3 className='text-[24px] leading-[150%] tracking-[-0.47px] text-[#111827] font-PoppinsBold mb-6'>
@@ -84,7 +84,7 @@ const ServiceProduct = () => {
           </ul>
         </div>
       </section>
-      <section className="bg-[url('../public/assets/images/vixpay-app.png')] bg-cover h-[360px] bg-no-repeat"></section>
+      <section className="bg-[url('../public/assets/images/vixpay-app.svg')] bg-cover h-[360px] bg-no-repeat"></section>
       <section className='pt-[56px] pb-[102px]'>
         <div className='max-w-[1109px] w-full mx-auto'>
           <h3 className='text-[24px] leading-[150%] tracking-[-0.47px] text-[#111827] font-PoppinsBold mb-6'>
@@ -136,7 +136,7 @@ const ServiceProduct = () => {
           </ul>
         </div>
       </section>
-      <section className="bg-[url('../public/assets/images/vixpay-devices.png')] bg-cover h-[360px] bg-no-repeat"></section>
+      <section className="bg-[url('../public/assets/images/vixpay-devices.svg')] bg-cover h-[360px] bg-no-repeat"></section>
       <section className='pt-[56px] pb-[300px]'>
         <div className='max-w-[1109px] w-full mx-auto'>
           <h3 className='text-[24px] leading-[150%] tracking-[-0.47px] text-[#111827] font-PoppinsBold mb-6'>
