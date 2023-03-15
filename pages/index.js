@@ -58,7 +58,7 @@ export default function Home(props) {
     data: props.data,
   });
 
-  let pageData = data.homepage_texts_fetch
+  let pageData = data.home
 
   useEffect(() => {
     paginateFilteredTab(page);
@@ -254,7 +254,7 @@ export default function Home(props) {
               {pageData.service_subtext}
             </p>
           </div>
-          <ul className='flex items-center justify-between flex-wrap max-w-[800px] w-full mx-auto gap-y-20 max-[450px]:gap-y-12'>
+          <ul className='flex items-center justify-between flex-wrap max-w-[800px] w-full mx-auto gap-y-20 max-[450px]:gap-y-12 max-[450px]:flex-col max-[450px]:items-center'>
             {pageData.service_items.length > 0 && pageData.service_items.map((service,index) => (
               <li key={index} className='flex flex-col items-center justify-between max-w-[320px] w-full text-center cursor-pointer hover:scale-105 duration-300'>
               <p className='text-[24px] max-[450px]:text-[18px] max-[450px]:leading-[135%] max-[450px]:tracking-[-0.26px] leading-[150%] font-PoppinsMedium text-[#06B6D4] mb-6'>

@@ -23,7 +23,7 @@ const Header = () => {
           alt='menu'
           className='hidden max-[450px]:inline-block'
         />
-        <nav className='max-w-[1000px] w-full max-[450px]:hidden'>
+        <nav className='max-w-[700px] w-full max-[450px]:hidden'>
           <ul className='flex items-center justify-between w-full'>
             <li>
               <Link

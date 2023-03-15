@@ -59,8 +59,8 @@
       "icon": "/assets/images/yoshopPos.svg"
     },
     {
-      "title": "",
-      "description": "",
+      "title": "VIXPAY App",
+      "description": "송금 결제 기능을 제공하는 Wallet 서비스",
       "icon": "/assets/images/vixpay-apps.svg"
     },
     {

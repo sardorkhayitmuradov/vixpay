@@ -1,6 +1,6 @@
 export const home = {
     label: "Homepage Texts",
-    name: "homepage_texts_fetch",
+    name: "home",
     path: "content/home",
     format: "json",
     fields: [
