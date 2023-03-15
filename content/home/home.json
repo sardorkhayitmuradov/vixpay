@@ -22,7 +22,7 @@
       "title": "금호타이어㈜",
       "description": "동사는 2003년 금호산업 타이어산업부의 자산부채 현물출자 및 영업양수도를 통해 설립되었음. 한국, 중국, 미국, 베트남에 위치한 8개 타이어 생산공장을 토대로 글로벌 생산체계를 구축하고, 전세계 판매 네트워크를 갖춘 타이어 제조, 판매 기업임.",
       "icon": "/assets/images/kumhotire.svg",
-      "icon_mobile": "/assets/images/kumhotire-client.svg"
+      "iconMobile": "/assets/images/kumhotireMobile.svg"
     },
     {
       "title": "㈜로운아뜨리움",
@@ -39,12 +39,14 @@
     {
       "title": "(사)한국외식업중앙회",
       "description": "국민영양과 보건향상 및 식품위생수준 향상에 기여하고, 일반음식점 영업자 회원간의 화합과 복리 및 권익 증진을 통한식문화 향상 도모. (업권 및 권익보호, 음식문화 개선, 식품위생 수준 향상)",
-      "icon": "/assets/images/foodservice.svg"
+      "icon": "/assets/images/foodservice.svg",
+      "iconMobile": "/assets/images/foodserviceMobile.svg"
     },
     {
       "title": "화타이코리아㈜",
       "description": "화타이자동차(华泰汽车, HAWTAI MOTOR)는 베이징에 본사를 둔 스포츠유틸리티차(SUV), 세단, 왜건, 전기자동차를 생산하는 중국 자동차 제조업체입니다.",
-      "icon": "/assets/images/hawtai.svg"
+      "icon": "/assets/images/hawtai.svg",
+      "iconMobile": "/assets/images/hawtaiMobile.svg"
     }
   ],
   "service": "Service",
